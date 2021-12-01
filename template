@@ -1,18 +1,16 @@
 package main
 
 import (
-	"advent-of-go-2020/utils/files"
+	"adventofcode/utils/files"
 )
 
 func main() {
 	input := files.ReadFile(x, "\n")
-	println(solvePartX(input))
+	solution := solvePartX(input)
+	fmt.Println(solution)
 }
 
-func solvePartX(input []string) int {
-    result := 0
-
-
+func solvePartX(input []string) (result int) {
 
     return result
 }

@@ -1,14 +1,16 @@
 package req
 
 import (
-	"advent-of-go-2020/secrets"
+	"adventofcode/secrets"
 	"fmt"
 	"io/ioutil"
 	"net/http"
 )
 
+const aocURL = "https://adventofcode.com/2021"
+
 func MakeRequest(day int) string {
-	url := fmt.Sprintf("https://adventofcode.com/2020/day/%v/input", day)
+	url := fmt.Sprintf("%s/day/%d/input", aocURL, day)
 	req, err := http.NewRequest("GET", url, nil)
 
 	if err != nil {
